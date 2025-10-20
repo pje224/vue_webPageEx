@@ -7,7 +7,7 @@
         <li @click="goPage('/reserve')">Reservation📅</li>
         <li @click="goPage('/review')">Review⭐</li>
         <li @click="goPage('/contact')">Contact📞</li>
-        <li @click="goPage('/faq')">Have a question❓</li>
+        <li @click="goPage('/faq')">Have a Question❓</li>
       </ul>
     </div>
   </div>
