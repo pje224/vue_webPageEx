@@ -4,6 +4,8 @@ import Reserve from "@/views/Reserve.vue";
 import Review from "@/views/Review.vue";
 import Contact from "@/views/Contact.vue";
 import ProductDetail from "../views/ProductDetail.vue";
+import NotFound from "../views/NotFound.vue";
+import FAQ from "../views/FAQ.vue";
 
 const routes = [
   { path: "/", component: Home, name: "Home" },
@@ -11,6 +13,9 @@ const routes = [
   { path: "/review", component: Review, name: "Review" },
   { path: "/contact", component: Contact, name: "Contact" },
   { path: "/product-detail/:id", component: ProductDetail, name: "ProductDetail" },
+  { path: "/faq", component: FAQ, name: "FAQ" },
+  // 404페이지 연결
+  { path: "/:pathMatch(.*)*", component: NotFound, name: "NotFound" },
 ];
 
 const router = createRouter({
